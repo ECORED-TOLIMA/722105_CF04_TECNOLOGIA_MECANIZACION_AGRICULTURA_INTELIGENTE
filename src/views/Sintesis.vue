@@ -2,13 +2,12 @@
 .curso-main-container.pb-3
   BannerInterno(icono="fas fa-sitemap" titulo="Síntesis")
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
-    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu tincidunt erat. Fusce cursus mauris in nulla egestas vulputate. Phasellus viverra accumsan libero, sed luctus diam maximus euismod. Mauris sem risus, tincidunt vel libero in, lobortis commodo ante. Sed pulvinar luctus orci in rhoncus. Nulla ut dapibus risus, ac tempor est. Donec nulla augue, vehicula quis malesuada vitae, fermentum non nisi. Donec tincidunt nibh a magna bibendum rutrum. 
-    
+    p El contenido aborda la gestión integral del mantenimiento de maquinaria agrícola, desde sus fundamentos, tipos, funciones, metodologías y normativa aplicable, hasta el diagnóstico y reconocimiento de fallas mediante la identificación de síntomas y la evaluación de los diferentes sistemas de los equipos. Asimismo, desarrolla la planificación y programación de las actividades de mantenimiento, la previsión de contingencias y la elaboración de presupuestos, considerando los costos durante la vida útil de la maquinaria. Finalmente, comprende la gestión de los recursos necesarios, como equipos, herramientas, insumos, repuestos y documentación técnica, así como los procesos de verificación y compra, con el propósito de organizar y gestionar el mantenimiento de acuerdo con las necesidades de los equipos, los manuales técnicos y la normativa aplicable.
 
     .row.justify-content-center
       .col-lg-10.mb-5.bgs.p-4.brad
         figure
-          img(src="@/assets/curso/sintesis.svg", alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu tincidunt erat. Fusce cursus mauris in nulla egestas vulputate. Phasellus viverra accumsan libero, sed luctus diam maximus euismod. Mauris sem risus, tincidunt vel libero in, lobortis commodo ante. Sed pulvinar luctus orci in rhoncus. Nulla ut dapibus risus, ac tempor est. Donec nulla augue, vehicula quis malesuada vitae, fermentum non nisi. Donec tincidunt nibh a magna bibendum rutrum. ")
+          img(src="@/assets/curso/sintesis.svg", alt="En la síntesis se presenta la gestión del mantenimiento de maquinaria agrícola, organizada en cuatro aspectos principales: fundamentos del mantenimiento, diagnóstico y reconocimiento de fallas, planificación y presupuesto, y gestión de los recursos necesarios para su ejecución.")
       .col-auto
         a.anexo.mb-5(:href="obtenerLink('/downloads/Sintesis.pdf')" target="_blank")
           .anexo__icono

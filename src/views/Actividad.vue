@@ -19,10 +19,10 @@ export default {
   },
   data: () => ({
     cuestionario: {
-      tema: 'Microcontroladores y sensores',
+      tema: 'Mantenimiento en marcha',
       titulo: 'Cuestionario',
       introduccion:
-        '<b> Objetivo:</b> Evaluar la comprensión y el uso adecuado de las herramientas básicas en la ventana <em>Board</em> del <em>software</em> EAGLE.',
+        '<b> Objetivo:</b> comprobar la comprensión de los fundamentos del mantenimiento de maquinaria agrícola, el diagnóstico de fallas, la planificación de actividades y la gestión de los recursos necesarios para su ejecución, de acuerdo con los temas abordados en el componente formativo.',
       barajarPreguntas: true,
       titulo_aprobado: '¡BUEN TRABAJO!',
       titulo_reprobado: 'VUELVA A INTENTARLO.',
@@ -30,400 +30,666 @@ export default {
         {
           id: 1,
           texto:
-            '¿Cuál es la función principal de la herramienta <em>Layer</em> en la ventana <em>Board</em>?',
+            '¿Cuál es el propósito principal del mantenimiento de maquinaria agrícola?',
           imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: '<em>Layer</em>',
+              texto: 'Organizar exclusivamente la compra de repuestos.',
               esCorrecta: false,
             },
             {
               id: 'b',
               texto:
-                'Seleccionar y editar capas que identifican márgenes, pistas y componentes.',
+                'Conservar el funcionamiento y las condiciones de los equipos.',
               esCorrecta: true,
             },
             {
               id: 'c',
-              texto: 'Ajustar automáticamente las pistas de cada componente.',
+              texto: 'Aumentar únicamente el número de máquinas disponibles.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Modificar el tamaño de los componentes.',
+              texto: 'Registrar solamente los costos de operación.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_correcto:
+            'Se evidencia una adecuada comprensión de los conceptos relacionados con el mantenimiento de maquinaria agrícola.',
           mensaje_incorrecto:
-            'Lo sentimos, su respuesta no es la correcta. <em>Board</em> del <em>software</em> EAGLE.',
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 2,
           texto:
-            '¿Qué herramienta permite agregar texto en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen1.png',
+            '¿Cuál de las siguientes opciones corresponde a un tipo de mantenimiento?',
+          imagen: '@/assets/actividad/imagen2.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: '<em>Layer</em>',
+              texto: 'Mantenimiento administrativo.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: '<em>Auto</em>',
+              texto: 'Mantenimiento comercial.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: '<em>Text</em>',
-              esCorrecta: true,
+              texto: 'Mantenimiento financiero.',
+              esCorrecta: false,
             },
             {
               id: 'd',
-              texto: '<em>Route</em>',
-              esCorrecta: false,
+              texto: 'Mantenimiento predictivo.',
+              esCorrecta: true,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Se evidencia una adecuada comprensión de los conceptos relacionados con el mantenimiento de maquinaria agrícola.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 3,
-          texto: '¿Para qué sirve la herramienta <em>Show</em> en EAGLE?',
-          imagen: '@/assets/actividad/imagen1.png',
+          texto:
+            '¿Cuál de las siguientes actividades forma parte de las funciones del mantenimiento?',
+          imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Para borrar conexiones.',
-              esCorrecta: false,
+              texto: 'Programación de actividades.',
+              esCorrecta: true,
             },
             {
               id: 'b',
-              texto:
-                'Para cambiar de ventana entre <em>Schematic</em> y <em>Board</em>.',
+              texto: 'Comercialización de productos.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'Para agregar nuevas capas.',
+              texto: 'Diseño de campañas publicitarias.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Para resaltar conexiones de pines.',
-              esCorrecta: true,
+              texto: 'Selección de mercados.',
+              esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Se evidencia una adecuada comprensión de los conceptos relacionados con el mantenimiento de maquinaria agrícola.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 4,
           texto:
-            '¿Qué botón se utiliza para cambiar entre las ventanas <em>Schematic</em> y <em>Board</em>?',
+            '¿Cuál de las siguientes corresponde a una metodología de mantenimiento?',
+          imagen: '@/assets/actividad/imagen4.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Gestión de ventas.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Análisis de mercado.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Mantenimiento productivo total (TPM).',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto: 'Planeación publicitaria.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            'Se evidencia una adecuada comprensión de los conceptos relacionados con el mantenimiento de maquinaria agrícola.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 5,
+          texto:
+            '¿Qué aspecto debe considerarse al analizar la criticidad de un equipo?',
+          imagen: '@/assets/actividad/imagen5.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'El color de la maquinaria.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'El impacto de su falla en la producción y la seguridad.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto: 'La ubicación de las oficinas administrativas.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'La cantidad de publicidad de su fabricante.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            'Se evidencia una adecuada comprensión de los conceptos relacionados con el mantenimiento de maquinaria agrícola.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 6,
+          texto:
+            '¿Cuál de las siguientes situaciones corresponde a una contingencia en la gestión del mantenimiento?',
+          imagen: '@/assets/actividad/imagen6.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'La actualización del diseño de una oficina.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'La elaboración de material publicitario.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'La programación de vacaciones administrativas.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'El retraso en la entrega de repuestos necesarios.',
+              esCorrecta: true,
+            },
+          ],
+          mensaje_correcto:
+            'Se evidencia una adecuada comprensión de los conceptos relacionados con el mantenimiento de maquinaria agrícola.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 7,
+          texto:
+            '¿Cuál es uno de los propósitos del diagnóstico de mantenimiento?',
+          imagen: '@/assets/actividad/imagen7.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Identificar las condiciones y posibles fallas de la maquinaria.',
+              esCorrecta: true,
+            },
+            {
+              id: 'b',
+              texto:
+                'Determinar el precio de venta de los productos agrícolas.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Definir la imagen comercial de la empresa.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Establecer los horarios del personal administrativo.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            'Se evidencia una adecuada comprensión de los conceptos relacionados con el mantenimiento de maquinaria agrícola.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 8,
+          texto:
+            '¿Cuál de las siguientes opciones corresponde a un tipo de diagnóstico de mantenimiento?',
+          imagen: '@/assets/actividad/imagen8.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Diagnóstico comercial.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Diagnóstico financiero.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Diagnóstico instrumental.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto: 'Diagnóstico publicitario.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            'Se evidencia una adecuada comprensión de los conceptos relacionados con el mantenimiento de maquinaria agrícola.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 9,
+          texto:
+            '¿Cuál de las siguientes situaciones representa un síntoma que puede orientar la detección de una falla?',
+          imagen: '@/assets/actividad/imagen9.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'La actualización del inventario de oficina.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'La elaboración de un presupuesto anual.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'La asignación de un responsable.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'La presencia de vibraciones anormales.',
+              esCorrecta: true,
+            },
+          ],
+          mensaje_correcto:
+            'Se evidencia una adecuada comprensión de los conceptos relacionados con el mantenimiento de maquinaria agrícola.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 10,
+          texto:
+            '¿Qué documento permite dejar constancia de los resultados obtenidos durante el diagnóstico de una máquina?',
+          imagen: '@/assets/actividad/imagen10.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Catálogo comercial.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Reporte del diagnóstico.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto: 'Plan de compras.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Cronograma de capacitación.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            'Se evidencia una adecuada comprensión de los conceptos relacionados con el mantenimiento de maquinaria agrícola.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 11,
+          texto:
+            '¿Qué documento organiza las actividades que se deben realizar para atender las necesidades de mantenimiento de una máquina?',
           imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: '<em>Text</em>',
+              texto: 'Lista de precios.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: '<em>Layer</em>',
+              texto: 'Catálogo de partes.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: '<em>Board</em>',
+              texto: 'Plan de mantenimiento.',
               esCorrecta: true,
             },
             {
               id: 'd',
-              texto: '<em>Route</em>',
+              texto: 'Ficha de proveedor.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-        },
-        {
-          id: 5,
-          texto: '¿Qué permite hacer la herramienta <em>Route</em>?',
-          imagen: '@/assets/actividad/imagen2.png',
-          barajarRespuestas: true,
-          opciones: [
-            {
-              id: 'a',
-              texto:
-                'Enrutar manualmente las pistas que no se ajustaron automáticamente.',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'Resaltar las conexiones de los pines.',
-              esCorrecta: false,
-            },
-            {
-              id: 'c',
-              texto: 'Crear una nueva capa en el diseño.',
-              esCorrecta: false,
-            },
-            {
-              id: 'd',
-              texto:
-                'Cambiar de ventana entre <em>Schematic</em> y <em>Board</em>.',
-              esCorrecta: false,
-            },
-          ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-        },
-        {
-          id: 6,
-          texto:
-            '¿Qué función tiene la herramienta <em>Auto</em> en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen2.png',
-          barajarRespuestas: true,
-          opciones: [
-            {
-              id: 'a',
-              texto: 'Borrar componentes.',
-              esCorrecta: false,
-            },
-            {
-              id: 'b',
-              texto: 'Ajustar automáticamente las pistas en cada componente.',
-              esCorrecta: true,
-            },
-            {
-              id: 'c',
-              texto: 'Crear nuevas conexiones de pines.',
-              esCorrecta: false,
-            },
-            {
-              id: 'd',
-              texto: 'Seleccionar y editar capas.',
-              esCorrecta: false,
-            },
-          ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-        },
-        {
-          id: 7,
-          texto:
-            '¿Cuál es una recomendación al ubicar los componentes en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen2.png',
-          barajarRespuestas: true,
-          opciones: [
-            {
-              id: 'a',
-              texto: 'Colocar los componentes en un solo bloque.',
-              esCorrecta: false,
-            },
-            {
-              id: 'b',
-              texto: 'Agrupar los componentes en bloques funcionales.',
-              esCorrecta: true,
-            },
-            {
-              id: 'c',
-              texto: 'Alinear todos los terminales a la derecha.',
-              esCorrecta: false,
-            },
-            {
-              id: 'd',
-              texto: 'Colocar los terminales lo más alejados posible.',
-              esCorrecta: false,
-            },
-          ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-        },
-        {
-          id: 8,
-          texto:
-            '¿Cuál de las siguientes capas se utiliza para añadir texto en el diseño?',
-          imagen: '@/assets/actividad/imagen2.png',
-          barajarRespuestas: true,
-          opciones: [
-            {
-              id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'bNames',
-              esCorrecta: false,
-            },
-            {
-              id: 'c',
-              texto: 'tStop',
-              esCorrecta: false,
-            },
-            {
-              id: 'd',
-              texto: 'bValues',
-              esCorrecta: false,
-            },
-          ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-        },
-        {
-          id: 9,
-          texto:
-            'La herramienta <em>Text</em> en la ventana <em>Board</em> solo permite cambiar el color de las capas.',
-          imagen: '@/assets/actividad/imagen3.png',
-          barajarRespuestas: true,
-          opciones: [
-            {
-              id: 'a',
-              texto: 'Verdadero',
-              esCorrecta: false,
-            },
-            {
-              id: 'b',
-              texto: 'Falso',
-              esCorrecta: true,
-            },
-          ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-        },
-        {
-          id: 10,
-          texto:
-            'La herramienta <em>Layer</em> permite seleccionar y editar capas para definir márgenes, pistas y componentes.',
-          imagen: '@/assets/actividad/imagen3.png',
-          barajarRespuestas: true,
-          opciones: [
-            {
-              id: 'a',
-              texto: 'Verdadero',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'Falso',
-              esCorrecta: false,
-            },
-          ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-        },
-        {
-          id: 11,
-          texto:
-            'El botón "<em>BOARD</em>" en EAGLE solo sirve para borrar componentes en el diseño.',
-          imagen: '@/assets/actividad/imagen3.png',
-          barajarRespuestas: true,
-          opciones: [
-            {
-              id: 'a',
-              texto: 'Verdadero',
-              esCorrecta: false,
-            },
-            {
-              id: 'b',
-              texto: 'Falso',
-              esCorrecta: true,
-            },
-          ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Se evidencia una adecuada comprensión de los conceptos relacionados con el mantenimiento de maquinaria agrícola.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 12,
           texto:
-            'La herramienta <em>Show</em> permite resaltar conexiones para facilitar la identificación de redes.',
+            '¿Cuál de los siguientes criterios puede utilizarse para programar las actividades de mantenimiento?',
+          imagen: '@/assets/actividad/imagen2.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'La disponibilidad del personal y de los recursos.',
+              esCorrecta: true,
+            },
+            {
+              id: 'b',
+              texto: 'La decoración de las instalaciones.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'La cantidad de publicaciones institucionales.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'El diseño de los uniformes.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            'Se evidencia una adecuada comprensión de los conceptos relacionados con el mantenimiento de maquinaria agrícola.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 13,
+          texto:
+            '¿Cuál es la finalidad de elaborar un presupuesto de mantenimiento?',
           imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
-              esCorrecta: true,
+              texto: 'Definir la imagen corporativa de la empresa.',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'Establecer las estrategias de publicidad.',
               esCorrecta: false,
             },
-          ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-        },
-        {
-          id: 13,
-          texto:
-            'La función <em>Auto</em> se utiliza para enrutado automático en la ventana <em>Board</em>.',
-          imagen: '@/assets/actividad/imagen4.png',
-          barajarRespuestas: true,
-          opciones: [
             {
-              id: 'a',
-              texto: 'Verdadero',
+              id: 'c',
+              texto: 'Registrar exclusivamente los datos de los operarios.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Estimar y organizar los recursos económicos requeridos.',
               esCorrecta: true,
             },
-            {
-              id: 'b',
-              texto: 'Falso',
-              esCorrecta: false,
-            },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Se evidencia una adecuada comprensión de los conceptos relacionados con el mantenimiento de maquinaria agrícola.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 14,
           texto:
-            'La herramienta <em>Route</em> en la ventana <em>Board</em> ajusta automáticamente todas las pistas del diseño.',
+            '¿Qué información resulta pertinente para analizar los costos de mantenimiento durante la vida útil de una máquina?',
           imagen: '@/assets/actividad/imagen4.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+              texto: 'La cantidad de anuncios del fabricante.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'Los gastos acumulados de mantenimiento y reparación.',
               esCorrecta: true,
             },
+            {
+              id: 'c',
+              texto: 'El número de reuniones comerciales.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'La cantidad de documentos de capacitación.',
+              esCorrecta: false,
+            },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Se evidencia una adecuada comprensión de los conceptos relacionados con el mantenimiento de maquinaria agrícola.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 15,
           texto:
-            'Es recomendable organizar los componentes en bloques funcionales como transformación y filtrado en la ventana <em>Board</em>.',
-          imagen: '@/assets/actividad/imagen4.png',
+            '¿Cuál de los siguientes elementos pertenece a los recursos físicos utilizados en el mantenimiento?',
+          imagen: '@/assets/actividad/imagen5.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+              texto: 'El informe de ventas.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'El cronograma de reuniones.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Las herramientas de medición.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto: 'El plan de mercadeo.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            'Se evidencia una adecuada comprensión de los conceptos relacionados con el mantenimiento de maquinaria agrícola.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 16,
+          texto:
+            '¿Qué información se consulta principalmente en un catálogo de partes de maquinaria agrícola?',
+          imagen: '@/assets/actividad/imagen6.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Los despieces y números de parte de los componentes.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'Los horarios de los trabajadores.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Las metas comerciales de la empresa.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Las actividades recreativas del personal.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Se evidencia una adecuada comprensión de los conceptos relacionados con el mantenimiento de maquinaria agrícola.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 17,
+          texto:
+            '¿Cuál es el propósito de utilizar técnicas de codificación para equipos y herramientas?',
+          imagen: '@/assets/actividad/imagen7.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Modificar las especificaciones del fabricante.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Reemplazar los manuales técnicos.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Eliminar los registros de inventario.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'Facilitar la identificación y el control de los recursos.',
+              esCorrecta: true,
+            },
+          ],
+          mensaje_correcto:
+            'Se evidencia una adecuada comprensión de los conceptos relacionados con el mantenimiento de maquinaria agrícola.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 18,
+          texto:
+            '¿Cuál de los siguientes elementos se clasifica como insumo para el mantenimiento de maquinaria agrícola?',
+          imagen: '@/assets/actividad/imagen8.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Un cronograma de actividades.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'El aceite lubricante.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto: 'Una lista maestra.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Un reporte de diagnóstico.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            'Se evidencia una adecuada comprensión de los conceptos relacionados con el mantenimiento de maquinaria agrícola.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 19,
+          texto:
+            '¿Qué aspecto debe comprobarse al seleccionar un repuesto para una máquina agrícola?',
+          imagen: '@/assets/actividad/imagen9.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'La compatibilidad con el equipo y el número de parte.',
+              esCorrecta: true,
+            },
+            {
+              id: 'b',
+              texto: 'El color del empaque exclusivamente.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'La ubicación de la oficina de compras.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'La cantidad de publicidad del producto.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            'Se evidencia una adecuada comprensión de los conceptos relacionados con el mantenimiento de maquinaria agrícola.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 20,
+          texto:
+            '¿Cuál es uno de los criterios para evaluar a los proveedores de repuestos e insumos?',
+          imagen: '@/assets/actividad/imagen10.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'La decoración de sus instalaciones.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'La cantidad de empleados administrativos.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'El tiempo de entrega de los productos.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto: 'La ubicación de sus campañas publicitarias.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            'Se evidencia una adecuada comprensión de los conceptos relacionados con el mantenimiento de maquinaria agrícola.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
       ],
       mensaje_final_aprobado: '¡Excelente! Ha superado la actividad.',

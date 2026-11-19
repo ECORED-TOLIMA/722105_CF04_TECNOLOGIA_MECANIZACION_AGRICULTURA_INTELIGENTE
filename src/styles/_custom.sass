@@ -1,17 +1,19 @@
 @use 'variables' as *
+
+// 01. PORTADA: decoraciones y animaciones del banner
 .banner-principal-decorativo
   &-1
     animation: float1 2.8s ease-in-out infinite alternate
     position: absolute
-    top: 68%
-    left: -10%
-    width: 20%
+    top: 20%
+    left: -1%
+    width: 25%
   &-2
-    animation: float1 2.5s ease-in-out infinite alternate
+    animation: float1 2.3s ease-in-out infinite alternate
     position: absolute
-    top: 30%
+    top: 70%
     right: 10%
-    width: 20%
+    width: 25%
 
 
 @keyframes float1
@@ -21,16 +23,31 @@
   100%
     transform: translateY(0px)
 
-.col-lg-7.col-xxl-5.ps-4.ps-sm-5.py-4.py-sm-5.banner-principal__info
-  flex: 0 0 auto !important
-  width: 58.33333333% !important
-.banner-principal__img 
-  padding-bottom: 0 !important;
-//.banner-principal__row .banner-principal__img 
-//    width: 33%;
+// 02. VISIBILIDAD: utilidades globales para escritorio y móvil
+// Modulo versión escritorio/movil
+@media (min-width:1400px)
+  .movil2
+    display: inline
+@media (min-width: 992px)
+  .desktop 
+    display: inline
+  .movil 
+    display: none
+@media (max-width: 991px)
+  .movil 
+    display: inline
+  .desktop 
+    display: none
+
+// 03. BANNER: colores y fondos compartidos
+.banner-principal .tarjeta
+  background-position: left 50% !important
+
+.banner-principal__row .banner-principal__img
+  width: 485.5px !important 
     
-.banner-principal p, .banner-principal h1, .banner-principal h2, .banner-principal h3, .banner-principal h4, .banner-principal h5, .banner-principal h6
-  color: $white !important  
+.banner-principal h1, .banner-principal h2, .banner-principal h3, .banner-principal h4, .banner-principal h5, .banner-principal h6, .banner-principal p
+  color: $black !important
 
 .boton *, .boton--sm *,
 .barra-avance__boton--regresar span
@@ -40,36 +57,1092 @@
 .banner-interno__titulo h5, .banner-interno__titulo h6
   color: $color-sistema-texto !important  
 .titulo-principal.color-acento-contenido .titulo-principal__numero span
-  color: $white !important
+  color: $black !important
 figcaption 
-    font-weight: normal !important
+  font-weight: normal !important
 
 .banner-interno__titulo__icono i
-    color: $color-acento-botones !important;
+  color: $color-primario !important
 
+.banner-interno__titulo__icono
+  background-color: $color-acento-botones
+
+.banner-principal
+  .banner-principal__row
+    transform: translateY(35px)
+
+.banner-principal
+  .container.tarjeta
+    background-image: url("../assets/curso/portada/fondo-banner-principal.png")
+    background-size: 100% 100% !important
+    background-position: center
+    min-height: 520px
+    @media (max-width: $bp-max-md)
+      background-image: url("../assets/curso/portada/fondo-banner-principal-md.png") !important
+      overflow: visible !important
+      background-size: 100% 100% !important
+    @media (max-width: $bp-max-xs)
+      background-image: url("../assets/curso/portada/fondo-banner-principal-sm.png") !important
+      overflow: visible !important
+      background-size: 100% 100% !important
+
+.banner-interno__fondo
+  background-image: url("../assets/curso/portada/banner.png") !important
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
 
 /**************************************************************/
 /***CUSTOM STYLES***/
 /**************************************************************/
 .p-full-width
-  padding: 3rem 3.5rem!important;
+  padding: 3rem 3.5rem!important
 .bg-full-width
   background-size: cover
   background-repeat: no-repeat
   background-position: bottom
   margin-inline: -3.3rem
-.bg-fondo
-  &-1
-    //background-image: url(../assets/curso/bg/3.svg)
 .bg-color
   &-1
     background-color: $color-primario
 
+// 04. CAJONES: paleta común (no modificar sin revisar otros temas)
+.cajon.C01
+  background-color: #F8EDD3
+
+.cajon.C02
+  background-color: #EEFFDB
+
+.cajon.C03
+  background-color: #1A5307
+
+.cajon.C04
+  background-color: #FFC96D
+  border-radius: 40px
+
+.cajon-metodologias
+  width: 100%
+  max-width: 760px
+  margin-left: auto
+  margin-right: auto
+  border-radius: 40px
+
+.cajon.C05
+  background-color: #C2F6A0
+
+.cajon.C06
+  background-color: #FFE8CE
+
+// 05. SLIDERS: colores y botones compartidos
+.slyder__btn
+  background-color: #982C03 !important
+  color: #fff !important
+
+// 06. IMÁGENES DE FONDO: revisar las rutas al cambiar de tema
+// ATENCIÓN: Tema1 usa esta clase, pero la imagen definida pertenece a t2; validar el recurso.
+.img-bg-01
+  background-image: url("../assets/curso/temas/t2/img-03.png") !important
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+
+.img-bg-02
+  background-image: url("../assets/curso/temas/t2/img-03.png") !important
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+
+.img-bg-03
+  background-image: url("../assets/curso/temas/t3/img-31.png") !important
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+
+.img-bg-04
+  background-image: url("../assets/curso/temas/t4/img-28.png") !important
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+
+// 07. TARJETAS: recursos y tipografía compartida
+.tarjeta--C02
+  background-image: url('../assets/curso/temas/t1/fondo-tarjeta.png')
+  background-repeat: no-repeat     
+  background-position: center      
+  background-size: cover
+
+.slyder-f__btn i
+  color: #982C03 !important
+
+.tarjeta.color-primario.verde
+  background-color: #C2F6A0
+
+.tarjeta.color-acento-botones.cafe
+  background-color: #E9D2A7
+
+// REVISAR ANTES DE CAMBIAR: este selector también afecta TODOS los h3, h4 y p del sitio.
+.tarjeta.color-acento-botones.cafe, h4, h3, p
+  color: #000 !important
+
+.tarjeta.color-acento-contenido.naranja
+  background: #FFC96D
+
+.tarjeta.color-acento-contenido.rosa
+  background: #FFA698
+
+.recurso-mantenimiento-img
+  background-image: url('../assets/curso/temas/t1/img-11.png')
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+
+.recurso-mantenimiento-img2
+  background-image: url('../assets/curso/temas/t1/img-25.png')
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+
+.recurso-mantenimiento-img3
+  background-image: url('../assets/curso/temas/t1/img-33.png')
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+
+.recurso-mantenimiento-img4
+  background-image: url('../assets/curso/temas/t2/img-21.png')
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+
+.recurso-mantenimiento-img5
+  background-image: url('../assets/curso/temas/t3/img-13.png')
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+
+.recurso-mantenimiento-img6
+  background-image: url('../assets/curso/temas/t3/img-39.png')
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+
+.recurso-mantenimiento-img7
+  background-image: url('../assets/curso/temas/t4/img-02.png')
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+
+// 08. TABLAS: estilos generales de metodología
+.tabla-metodologias
+  table
+    width: 100%
+
+  thead
+    tr
+      background-color: #FFE8CE !important
+
+  tbody
+    tr
+      background-color: #FFFFFF
+
+      &:nth-child(odd)
+        background-color: #F6F6F6 !important
+
+  th
+    color: #12263F
+    font-weight: 700
+    text-align: center
+    vertical-align: middle
+
+  td
+    color: #12263F
+    vertical-align: middle
+
+    b
+      font-weight: 700
+
+@media (max-width: 575.98px)
+  .tabla-metodologias
+    th,
+    td
+      font-size: .9rem
+      line-height: 1.35
+      padding: .7rem .6rem
+
+// 09. TEMA 1: imagen superior y franja de texto
+.recurso-funciones-mantenimiento
+  width: 100%
+  overflow: hidden
+  border-radius: 0
+
+  &__imagen
+    width: 100%
+    margin: 0 !important
+    padding: 0
+
+    img
+      display: block
+      width: 100%
+      height: 240px
+      object-fit: cover
+      object-position: center center
+
+  &__texto
+    width: 100%
+    background-color: #BFF5A5
+    padding: 1rem 1.3rem
+
+    p
+      margin: 0
+      line-height: 1.5
+      color: #12263F
+
+// Responsive: tabletas y pantallas medianas
+@media (max-width: 991.98px)
+  .recurso-funciones-mantenimiento
+    &__imagen
+      img
+        height: 210px
+
+    &__texto
+      padding: 1rem 1.2rem
+
+// Responsive: móviles
+@media (max-width: 575.98px)
+  .recurso-funciones-mantenimiento
+    &__imagen
+      img
+        height: 160px
+        object-position: center center
+
+    &__texto
+      padding: 1rem
+
+// 10. LÍNEA DE TIEMPO D: tarjetas y estados del paso activo
+// - Linea de Tiempo D
+.linea-tiempo-d.color-acento-botones.especial
+  .linea-tiempo-d__item--selected
+    .linea-tiempo-d__item__content
+      background-color: #F8EDD3 !important 
+    .tarjeta.tarjeta--gris
+      background-color: #982C03
+      span
+        color: $black
+  .linea-tiempo-d__item--selected .linea-tiempo-d__item__content__title
+    span
+      color: #000 !important
+  .linea-tiempo-d__item__content.tarjeta.tarjeta--gris
+    background-color: #E8D5D5
+.tarjeta.tarjeta--gris
+  background-color: #E8D5D5
+.tarjeta.tarjeta--gris2
+  background-image: url('../assets/curso/temas/t3/fondo-linea-tiempo.png')
+  background-size: 100% 100%
+  background-position: center center
+  background-repeat: no-repeat
+.linea-tiempo-d__item__number
+  span
+    color: #000 !important
+    font-weight: bold
+
+.linea-tiempo-d.color-acento-botones.especial
+  .linea-tiempo-d__item--selected
+    .linea-tiempo-d__item__number
+      span
+        color: #FFFFFF !important
+
+@media (max-width: 575.98px)
+  .linea-tiempo-d.color-acento-botones.especial
+    .linea-tiempo-d__item--selected
+      .linea-tiempo-d__item__content__title
+        display: flex !important
+        align-items: center !important
+        min-height: 50px !important
+        padding-top: .85rem !important
+        padding-bottom: .55rem !important
+        margin-bottom: .65rem !important
+
+        span
+          display: block !important
+          line-height: 1.25 !important
+          white-space: normal !important
+          margin: 0 !important
+          padding: 0 !important
+
+// 11. FONDOS DE COSTOS: borde extendido, detalles y adaptación móvil
+.recurso-costos-fondo
+  position: relative
+  box-sizing: border-box
+  width: calc(100% + 6rem)
+  margin-left: -3rem
+  margin-right: -3rem
+  padding: 1.5rem 3rem 1rem
+  background-color: #F1FFE5
+  background-image: url('../assets/curso/temas/t1/fondo.png')
+  background-size: 100% 100%
+  background-position: center center
+  background-repeat: no-repeat
+  overflow: hidden
+
+  > p
+    position: relative
+    z-index: 1
+
+  .recurso-intro-sin-img-console
+    position: relative
+    z-index: 1
+    margin-bottom: 0 !important
+
+  figure
+    margin-bottom: 0
+
+  img
+    max-width: 100%
+    height: auto
 
 
+// Responsive: pantallas menores a 768px
+@media (max-width: 767.98px)
+  .recurso-costos-fondo
+    width: calc(100% + 3rem)
+    margin-left: -1.5rem
+    margin-right: -1.5rem
+    padding: 1.2rem 1.5rem
+    background-size: 100% 100%
 
 
+// Responsive: móviles
+@media (max-width: 575.98px)
+  .recurso-costos-fondo
+    padding: 1rem 1.5rem
 
+    .recurso-intro-sin-img-console
+      margin-bottom: 0 !important
+
+      > .col
+        min-width: 0
+
+// 12. PASOS A: alineación de textos
+.pasos-texto-izquierda
+  h3,
+  p
+    text-align: left !important
+
+  .row
+    .col-lg-8
+      text-align: left !important
+
+      h3
+        text-align: left !important
+        margin-bottom: .8rem
+
+      p
+        text-align: left !important
+        margin-left: 0 !important
+        margin-right: 0 !important
+
+@media (max-width: 991.98px)
+  .pasos-texto-izquierda
+    h3,
+    p
+      text-align: left !important
+
+    .row
+      .col-lg-8
+        text-align: left !important
+
+// 13. LÍNEA DE TIEMPO C: puntos y línea de navegación
+.recurso-linea-pasos .linea-tiempo-c__header__item__dot
+  background-color: #FFFFFF !important
+  border: 2px solid #D5D5D5 !important
+
+.recurso-linea-pasos .linea-tiempo-c__header__item__dot::after
+  background-color: transparent !important
+
+.recurso-linea-pasos .linea-tiempo-c__header__item__line-container::before
+  background-color: #CCCCCC !important
+
+.recurso-linea-pasos .linea-tiempo-c__header__item__line-container::after
+  background-color: #CCCCCC !important
+
+.recurso-linea-pasos .linea-tiempo-c__header__item--active .linea-tiempo-c__header__item__dot
+  background-color: #FFFFFF !important
+  border: 2px solid #982C03 !important
+
+.recurso-linea-pasos .linea-tiempo-c__header__item--active .linea-tiempo-c__header__item__dot::after
+  background-color: #982C03 !important
+  width: 9px
+  height: 9px
+
+// 14. TARJETAS AUXILIARES: efectos hover y variantes
+//- Modulo crd x4 (1)
+.crd
+  &.brd--rad
+    border-radius: 20px 
+  &.crd--grayGrad
+    padding: 2.4rem
+    height: 100%
+    background-image: url("../assets/curso/temas/t2/fondo-tarjeta-1.png")
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    border-radius: 15px    
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+    &:hover      
+      background-image: url("../assets/curso/temas/t2/fondo-tarjeta-2.png")
+      background-size: cover
+      background-repeat: no-repeat
+      background-position: center
+      h5
+        color: $black !important
+      .bottomCircle
+        &::before
+          background-color: #FEB241
+  &.crd--blue
+    background-color: #69D7E5
+  &.crd--border
+    border: 4px solid $color-acento-botones
+    border-radius: 20px
+.bottomCircle
+  position: relative
+  & > *
+    position: relative
+  &::before
+    content: ""
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    width: 100px
+    height: 100px
+    background-color:#982C03
+    border-radius: 999px
+
+//- Modulo medidas imagenes
+.img80
+  width: 80px 
+
+
+// 15. ANEXOS: ilustración, contenido y botón de descarga
+.anexo-chequeo
+  background-color: #E8D5D5
+  border-radius: 25px !important
+  padding: 2.2rem 2.5rem !important
+  min-height: 340px
+  display: flex
+  align-items: center
+
+  > .row
+    width: 100%
+    min-height: 260px
+    margin: 0 !important
+
+  &__imagen
+    display: block
+    width: 100%
+    max-width: 285px
+    height: auto
+    margin: 0 auto
+
+  &__contenido
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: center
+
+    p
+      font-size: 1rem
+      line-height: 1.5
+      color: #12263F
+      margin-bottom: 1.5rem !important
+
+    .boton
+      font-size: .9rem
+      padding: .65rem .9rem
+      display: inline-flex
+      align-items: center
+      gap: .5rem
+
+  &__titulo
+    position: relative
+    width: 100%
+    font-size: 1.1rem
+    font-weight: 700
+    line-height: 1.35
+    color: #12263F
+    padding-bottom: 1rem
+    margin-bottom: 1.5rem
+
+    &::after
+      content: ""
+      position: absolute
+      left: 0
+      bottom: 0
+      width: 120px
+      height: 3px
+      background: linear-gradient(90deg, #FFB758 0%, #FFB758 35%, #AFC6DE 35%, #AFC6DE 100%)
+
+
+// Tabletas
+@media (max-width: 991.98px)
+  .anexo-chequeo
+    padding: 1.8rem 1.5rem !important
+    min-height: 300px
+
+    > .row
+      min-height: auto
+
+    &__imagen
+      max-width: 240px
+
+    &__titulo
+      font-size: 1rem
+
+
+// Móviles
+@media (max-width: 767.98px)
+  .anexo-chequeo
+    padding: 1.5rem 1.2rem !important
+    min-height: auto
+
+    &__imagen
+      max-width: 220px
+
+    &__contenido
+      width: 100%
+      align-items: flex-start
+
+      p
+        margin-bottom: 1.2rem !important
+
+    &__titulo
+      margin-bottom: 1.2rem
+
+
+// Móviles pequeños
+@media (max-width: 575.98px)
+  .anexo-chequeo
+    padding: 1.3rem 1rem !important
+    border-radius: 20px !important
+
+    &__imagen
+      max-width: 190px
+
+    &__titulo
+      font-size: 1rem
+      line-height: 1.4
+
+      &::after
+        width: 100px
+
+// 16. PASOS B Y NAVEGACIÓN: controles y colores
+//- Código pasosb
+.tarjeta--BG02
+  background-image: url("../assets/curso/temas/t3/fondo-pasos.png")
+  background-size: cover
+  background-repeat: no-repeat
+  margin-inline: -3rem !important
+  @media (max-width: $bp-max-sm)
+    margin-inline: -1.5rem !important
+
+.linea-tiempo-c__header__btn, .pasos-b__header__btn--left, .pasos-b__header__btn--right, .linea-tiempo-c__header__btn--left, .linea-tiempo-c__header__btn--right
+  background-color: #982C03
+  color: #ffff !important
+  border: none !important
+
+.recurso-linea-pasos
+  .linea-tiempo-c
+    .row
+      align-items: flex-start
+
+      figure
+        margin: 0
+
+        img
+          display: block
+          width: 100%
+          max-width: 100%
+          height: auto
+          border-radius: 10px
+
+// Responsive para tabletas
+@media (max-width: 991.98px)
+  .recurso-linea-pasos
+    padding: 1.5rem !important
+
+// Responsive para móviles
+@media (max-width: 767.98px)
+  .recurso-linea-pasos
+    padding: 1rem !important
+
+    .linea-tiempo-c
+      .row
+        figure
+          margin-bottom: 0
+
+        .col-md-5
+          width: 100%
+
+.pasos-b__header__item--before .pasos-b__header__item__dot
+  background-color: #E8CB91
+  border-color: #E8CB91
+
+.pasos-b__header__item__dot i
+  color: #000 !important
+
+.pasos-b__header__item--before .pasos-b__header__item__line-container:before, .pasos-b__header__item--before .pasos-b__header__item__line-container:after
+  background-color: #9D9D9D
+
+.pasos-b__header__item--active .pasos-b__header__item__line-container:before
+  background-color: #9D9D9D
+
+.pasos-b.color-acento-botones .pasos-b__header__item--active .pasos-b__header__item__dot span
+  color: #fff
+
+.pasos-b__header__item__dot
+  border: 3px solid #144567
+
+// 17. TARJETAS NUMERADAS: variantes de bordes
+//- Ajuste tarjetas de color
+.tarjeta-numerada.color-primario
+  border: 3px solid #A0E57E
+.tarjeta-numerada.color-acento-contenido
+  border: 3px solid #E8CB91
+.tarjeta-numerada.color-acento-contenido .tarjeta-numerada__numero
+  background-color: #E8CB91
+.tarjeta-numerada.color-acento-contenido.especial
+  border-color: #FEB241
+  border: 3px solid #FEB241
+.tarjeta-numerada.color-acento-contenido.especial .tarjeta-numerada__numero
+  background-color: #FEB241
+.tarjeta-numerada.color-acento-botones.especial
+  border-color: #FFA698
+  border: 3px solid #FFA698
+.tarjeta-numerada.color-acento-botones.especial .tarjeta-numerada__numero
+  background-color: #FFA698
+.tarjeta-numerada.color-acento-botones.especial .tarjeta-numerada__numero div
+  color: #000 !important
+
+// 18. COMPOSICIÓN C10: recorte de imagen y disposición de columnas
+.recurso-c10-ajuste
+  overflow: hidden
+
+  > [class*="col-"]
+    padding-left: 0 !important
+    padding-right: 0 !important
+
+  > .col-lg-5
+    figure
+      margin: 0 !important
+      height: 100%
+
+      img
+        display: block
+        width: 100%
+        height: 100%
+        object-fit: cover
+        object-position: center
+        margin: 0 !important
+
+  .cajon.C10
+    background-color: #C2F6A0
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    border-radius: 0 !important
+    margin-left: -1px !important
+
+@media (min-width: 1200px) and (max-width: 1500px)
+  .recurso-c10-ajuste
+    max-width: 1050px
+    margin-left: auto !important
+    margin-right: auto !important
+
+    .cajon.C10
+      padding: 2rem !important
+
+      p
+        font-size: .96rem
+        line-height: 1.45
+
+@media (min-width: 992px) and (max-width: 1199.98px)
+  .recurso-c10-ajuste
+    max-width: 920px
+    margin-left: auto !important
+    margin-right: auto !important
+
+    > .col-lg-5
+      display: none !important
+
+    > .col-lg-7
+      flex: 0 0 100% !important
+      max-width: 100% !important
+      width: 100% !important
+
+    .cajon.C10
+      margin-left: 0 !important
+      padding: 2rem !important
+      min-height: auto !important
+
+      p
+        font-size: 1rem
+        line-height: 1.45
+
+//- Ajuste recurso c10-ajuste
+
+.c10-icono-arriba
+  justify-content: center !important
+
+  .row.mb-0
+    width: 100%
+    flex-direction: column !important
+    justify-content: center !important
+    align-items: flex-start !important
+    margin-left: 0 !important
+    margin-right: 0 !important
+
+    .col-lg-2
+      width: 100% !important
+      max-width: 100% !important
+      flex: 0 0 auto !important
+      padding-left: 0 !important
+      padding-right: 0 !important
+      margin-bottom: 1rem !important
+
+      figure
+        margin: 0 !important
+
+        img
+          display: block
+          width: 80px !important
+          max-width: 80px !important
+          height: auto !important
+          margin: 0 !important
+
+    .col-lg-10
+      width: 100% !important
+      max-width: 100% !important
+      flex: 0 0 auto !important
+      padding-left: 0 !important
+      padding-right: 0 !important
+
+// 19. PRESUPUESTO: caja con imagen lateral y responsividad
+.recurso-presupuesto
+  width: 100%
+  background-color: #BDF4A2
+  overflow: hidden
+
+  &__contenido
+    padding: 1.8rem 1.6rem
+    display: flex
+    flex-direction: column
+    justify-content: center
+    position: relative
+    z-index: 1
+
+  &__icono
+    display: block
+    width: 76px
+    height: auto
+
+  &__imagen
+    position: relative
+    min-height: 290px
+
+    img
+      position: absolute
+      inset: 0
+      width: 100%
+      height: 100%
+      object-fit: cover
+      object-position: center
+      display: block
+
+@media (max-width: 991.98px)
+  .recurso-presupuesto
+    &__contenido
+      padding: 1.5rem
+
+    &__imagen
+      min-height: 240px
+
+@media (max-width: 575.98px)
+  .recurso-presupuesto
+    &__contenido
+      padding: 1.2rem
+
+    &__imagen
+      min-height: 190px
+
+    &__icono
+      width: 65px
+
+
+// 20. TABLAS DE PRESUPUESTO: anchos y scroll horizontal
+.tabla-presupuesto
+  width: 100%
+  overflow-x: auto
+
+  table
+    width: 100%
+    border-collapse: collapse
+    table-layout: fixed
+
+    th, td
+      border: 1px solid #E5E5E5
+      padding: .85rem 1rem
+      vertical-align: middle
+      color: #12263F
+
+    thead
+      th
+        background-color: #FFE8C8
+        border-top: 3px solid #FFB758
+        font-weight: 700
+        text-align: center
+
+      th:nth-child(1)
+        width: 21%
+
+      th:nth-child(2)
+        width: 24%
+
+      th:nth-child(3)
+        width: 55%
+
+    tbody
+      background-color: #FFFFFF
+
+      td
+        text-align: left
+
+// Responsive para tabletas y móviles
+@media (max-width: 767.98px)
+  .tabla-presupuesto
+    table
+      min-width: 720px
+
+      th, td
+        padding: .75rem
+
+// 21. TÍTULOS Y AVISOS: estilos reutilizables
+.titulo01
+  position: relative
+  left: -2%
+  background-color: #FFC96D
+  border-radius: 20px
+  h3
+    color: black
+  @media screen and ( max-width: $bp-max-lg )
+    left: -3%
+  @media screen and ( max-width: $bp-max-sm )
+    left: -4%
+
+// 22. AVISOS CON ÍCONO: imagen y párrafo verde
+.recurso-valores-icono
+  margin: 0
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+
+  img
+    display: block
+    width: 80px
+    max-width: 100%
+    height: auto
+
+.recurso-valores-texto
+  background-color: #BFF5A5
+  min-height: 80px
+  height: 100%
+  padding: 1rem 1.25rem
+  display: flex
+  align-items: center
+
+  p
+    margin: 0
+    color: #12263F
+
+
+@media (max-width: 991.98px)
+  .recurso-valores-texto
+    min-height: 75px
+    padding: 1rem
+
+
+@media (max-width: 575.98px)
+  .recurso-valores-texto
+    min-height: auto
+    padding: 1rem
+
+// 23. TEMA 4: fondo alternativo del bloque de costos
+.recurso-costos-fondo.recurso-costos-fondo--t4
+  background-image: url('../assets/curso/temas/t4/fondo.png')
+
+/////// Estilo tarjeta SlyderA ---------------------------------------------
+
+.tarjeta
+  &--BG01
+    background-image: url("../assets/curso/temas/t4/fondo-slyder-a.png")
+    margin-inline: -3rem !important
+    overflow: hidden
+    @media (max-width: $bp-max-sm)
+      margin-inline: -1.5rem !important
+    figure
+      z-index: -1 !important
+
+.tarjeta--FBG01
+  box-shadow: none !important
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  background-color: #FFFFFF !important
+
+.slider-fix-bleed
+  position: relative
+
+  .slyder-a
+    background: transparent !important
+
+  .slyder-a__contenido
+    background: transparent !important
+    padding: 0 !important
+
+  .slyder-a__item
+    background: transparent !important
+
+  .row
+    margin-left: auto !important
+    margin-right: auto !important
+    max-width: 1100px  
+
+.slider-fix-bleed .row
+  background: #ffffff
+  border-radius: 20px
+  padding: 2rem
+
+////////// Estilo botonera SlyderA --------------------------------------------------
+
+.slyder-a__btn--sigt, .slyder-a__btn--atrs
+  background-color: #982C03
+  border: none !important
+  background-repeat: no-repeat
+  background-position: center
+  background-image: url("../assets/componentes/arrow_v2.svg")
+  opacity: 1
+  @media (max-width: $bp-max-xs)
+    width: 35px
+    height: 35px
+
+.slyder-a__bullets__item
+  background-color: #982C03
+  border: none !important
+  @media (max-width: 450px)
+    margin: 0 5px
+  @media (max-width: 400px)
+    margin: 0 4px
+  
+.slyder-a__tipo-b .slyder-a__btn--sigt
+  transform: rotate(0deg) !important
+
+.slyder-a__tipo-b .slyder-a__btn--atrs
+  transform: rotate(180deg) !important
+
+.slyder-a__bullets__item--active, .acordion__accion__btn--a
+  background-color: #E8CB91
+  border: none !important
+
+// 25. LISTAS: disposición de viñetas y numeración
+//- Listas
+.lista-ul li, ol.lista-ol li, .lista-ul--color li, .ol.lista-ol--cuadro li, .lista-ol--cuadro li, .lista-ul--separador li
+  display: flex
+
+// 26. TEMA 4: variante del bloque presupuesto
+.recurso-presupuesto--codificacion
+  .recurso-presupuesto__contenido
+    padding: 1.3rem 1.5rem
+    justify-content: flex-start
+    gap: 1.2rem
+
+  .recurso-presupuesto__imagen
+    min-height: 260px
+
+    img
+      object-fit: cover
+      object-position: center
+
+@media (max-width: 991.98px)
+  .recurso-presupuesto--codificacion
+    .recurso-presupuesto__contenido
+      padding: 1.5rem
+      gap: 1rem
+
+    .recurso-presupuesto__imagen
+      min-height: 240px
+
+@media (max-width: 575.98px)
+  .recurso-presupuesto--codificacion
+    .recurso-presupuesto__contenido
+      padding: 1.2rem
+      gap: 1rem
+
+    .recurso-presupuesto__imagen
+      min-height: 190px
+
+@media (min-width: 992px)
+  .recurso-presupuesto--codificacion
+    .recurso-presupuesto__imagen
+      min-height: 0
+
+
+// 27. EVOLUCIÓN DE COSTOS: fondo y tamaño interior
+.recurso-evolucion-costos
+  width: 100%
+  background-color: #EEFFDB
+  padding: 2rem 2.2rem
+  box-sizing: border-box
+
+  // Evita espacio adicional al finalizar el recurso
+  > p:last-child
+    margin-bottom: 0 !important
+
+  // Ajuste exclusivo del icono junto al cajón verde
+  .recurso-valores-icono
+    justify-content: flex-end
+
+    img
+      width: 100%
+      max-width: 80px
+      height: auto
+
+// Responsive para tabletas
+@media (max-width: 991.98px)
+  .recurso-evolucion-costos
+    padding: 1.5rem
+
+// Responsive para móviles
+@media (max-width: 575.98px)
+  .recurso-evolucion-costos
+    padding: 1.2rem 1rem
+
+// 28. CAJÓN DE GRUPOS: variante exclusiva del encabezado amarillo
+.cajon.C04.cajon-metodologias--grupos
+  width: 100%
+  max-width: 100%
+  padding: .4rem 1rem !important
+  margin-left: auto
+  margin-right: auto
+  border-radius: 40px
+
+  p
+    font-size: 1rem
+    line-height: 1.4
+
+@media (max-width: 767.98px)
+  .cajon.C04.cajon-metodologias--grupos
+    padding: .6rem 1rem !important
 
 /**************************************************************/
 /*Media Queries*/  
@@ -102,5 +1175,209 @@ figcaption
   .mb-cus
     margin-bottom: 2em  !important
 
-  
- 
+// 29. AJUSTES EXCLUSIVOS DE TEMA 1
+// Al estar precedidos por .tema1-revision, no modifican los demás temas.
+
+// Color de fondo que anteriormente estaba definido con style="..." en el Pug.
+.tema1-revision .tema1-bloque-intro
+  background-color: #1A5307 !important
+
+// Los cuatro encabezados de tablas tienen tres columnas del mismo ancho.
+.tema1-revision .tabla-metodologias thead th
+  width: 33%
+
+// En pantallas angostas, una tabla de tres columnas necesita ancho mínimo legible.
+// Se permite desplazar SOLO la tabla, sin mover el contenido de la página.
+@media (max-width: 767.98px)
+  .tema1-revision .tabla-metodologias
+    overflow-x: auto
+    -webkit-overflow-scrolling: touch
+
+    table
+      min-width: 720px
+
+  // Menor padding únicamente en las cuatro tarjetas del referente normativo.
+  .tema1-revision .tema1-cuatro-referentes > .col-md
+    padding: 1.5rem !important
+
+// En tabletas, evitar que las 4 tarjetas con p-5 queden en 4 columnas muy angostas.
+@media (min-width: 768px) and (max-width: 1199.98px)
+  .tema1-revision .tema1-cuatro-referentes > .col-md
+    flex: 0 0 50%
+    max-width: 50%
+
+// 30. TEMA 2: estilos aislados para no afectar los demás temas
+// Clase de ámbito añadida en src/views/Tema2.vue.
+
+// Color que estaba dentro del atributo style del bloque introductorio.
+.tema2-rv .tema2-bloque-intro
+  background-color: #1A5307 !important
+
+// Tablas 5 y 6: conservar las tres columnas del mismo ancho.
+// El ancho antes estaba definido en cada th del Pug.
+.tema2-rv .tabla-metodologias thead th
+  width: 33%
+
+// Pantallas angostas: desplazar únicamente las tablas, no la página.
+// Reducir el padding del deslizador de diagnóstico sin tocar otras instancias.
+@media (max-width: 767.98px)
+  .tema2-rv .tabla-metodologias
+    overflow-x: auto
+    -webkit-overflow-scrolling: touch
+
+    table
+      min-width: 720px
+
+  .tema2-rv .tema2-slyder-diagnostico
+    padding: 1.25rem !important
+
+// Móviles pequeños: ganar espacio de lectura sin alterar font-size.
+@media (max-width: 575.98px)
+  .tema2-rv .tema2-slyder-diagnostico
+    padding: 1rem !important
+
+  .tema2-rv .slyder-etapas-bg .tarjeta--C02
+    padding: 1rem !important
+
+// 31. TEMA 3: ajustes aislados (src/views/Tema3.vue)
+// Ámbito: .tema3-rv; no modificar reglas compartidas de temas 1 y 2.
+// Los estilos de presentación se trasladan aquí; Pug conserva la estructura HTML.
+
+// 31.1 Fondo verde de la introducción del apartado 3.7.
+.tema3-rv .tema3-bloque-intro
+  background-color: #1A5307 !important
+
+// 31.2 Anchos originales de encabezados: tablas 7 y 9.
+.tema3-rv .tema3-tabla-planes thead th
+  width: 33%
+
+.tema3-rv .tema3-tabla-costos thead th
+  width: 25%
+
+// 31.3 Capas e icono del título del ejemplo de costos (antes style en Vue).
+.tema3-rv .tema3-evolucion-icono-col
+  z-index: 2
+
+.tema3-rv .tema3-evolucion-titulo
+  z-index: 1
+
+.tema3-rv .tema3-icono-titulo
+  width: 45px
+
+// 31.4 Desbordamiento horizontal solo en las tablas de tres y cuatro columnas.
+// No reducir font-size; mantener los datos legibles en móviles.
+@media (max-width: 767.98px)
+  .tema3-rv .tema3-tabla-planes,
+  .tema3-rv .tema3-tabla-costos
+    overflow-x: auto
+    -webkit-overflow-scrolling: touch
+
+    table
+      min-width: 760px
+
+  // Reducir el padding de este SlyderB, sin afectar SlyderB de otros temas.
+  .tema3-rv .tema3-slyder-programacion
+    padding: 1.25rem !important
+
+// 31.5 Espaciado de las tarjetas y slider de rubros en móviles pequeños.
+@media (max-width: 575.98px)
+  .tema3-rv .tema3-slyder-programacion
+    padding: 1rem !important
+
+  .tema3-rv .tema3-tarjetas-programacion .tarjeta-numerada
+    padding: 1.5rem !important
+
+  .tema3-rv .tema3-slyder-rubros .tarjeta--C02
+    padding: 1rem !important
+
+// 32. TEMA 4: estilos exclusivos (src/views/Tema4.vue)
+// Ámbito: .tema4-rv. Se conservan los estilos compartidos de los temas anteriores.
+
+// 32.1 Anchos que antes estaban en cada th con style="width: ...".
+// Se mantiene el algoritmo original de distribución de la tabla (table-layout: auto).
+.tema4-rv .tema4-tabla-10 thead th
+  width: 33%
+
+.tema4-rv .tema4-tabla-11 thead th,
+.tema4-rv .tema4-tabla-13 thead th,
+.tema4-rv .tema4-tabla-14 thead th
+  width: 25%
+
+.tema4-rv .tema4-tabla-12 thead th
+  width: 20%
+
+// Tabla 15 tenía proporciones 10%, 25%, 10%; conservarlas sin normalizarlas.
+.tema4-rv .tema4-tabla-15 thead th:nth-child(1),
+.tema4-rv .tema4-tabla-15 thead th:nth-child(3)
+  width: 10%
+
+.tema4-rv .tema4-tabla-15 thead th:nth-child(2)
+  width: 25%
+
+// 32.2 Imágenes del SlyderA: respetar 500 px y evitar desbordes en móviles.
+.tema4-rv .tema4-catalogos-imagen
+  display: block
+  width: 500px
+  max-width: 100%
+  height: auto
+
+// 32.3 Icono y capas del título de repuestos (antes en atributos style del Pug).
+.tema4-rv .tema4-titulo-icono-col
+  z-index: 2
+
+.tema4-rv .tema4-titulo-repuestos
+  z-index: 1
+
+.tema4-rv .tema4-titulo-icono
+  width: 45px
+  max-width: 100%
+  height: auto
+
+// 32.4 Fondo introductorio de formatos de verificación (Tema 4, apartado 4.7).
+.tema4-rv .tema4-bloque-formatos
+  background-color: #1A5307 !important
+
+// 32.5 Tablas desplazables solo en pantallas estrechas; fuente sin cambios.
+@media (max-width: 767.98px)
+  .tema4-rv .tema4-tabla-10,
+  .tema4-rv .tema4-tabla-11,
+  .tema4-rv .tema4-tabla-12,
+  .tema4-rv .tema4-tabla-13,
+  .tema4-rv .tema4-tabla-14,
+  .tema4-rv .tema4-tabla-15
+    overflow-x: auto
+    -webkit-overflow-scrolling: touch
+
+  .tema4-rv .tema4-tabla-10 table,
+  .tema4-rv .tema4-tabla-15 table
+    min-width: 720px
+
+  .tema4-rv .tema4-tabla-11 table,
+  .tema4-rv .tema4-tabla-13 table,
+  .tema4-rv .tema4-tabla-14 table
+    min-width: 880px
+
+  .tema4-rv .tema4-tabla-12 table
+    min-width: 1050px
+
+  // Quitar espacio excesivo solo a los sliders de este tema.
+  .tema4-rv .tema4-slyder-manuales
+    padding: 1.25rem !important
+
+  .tema4-rv .tema4-slyder-catalogos .slider-fix-bleed .row
+    padding: 1.25rem
+
+// 32.6 Móviles pequeños: más espacio útil para las tarjetas (sin cambiar font-size).
+@media (max-width: 575.98px)
+  .tema4-rv .tema4-slyder-manuales
+    padding: 1rem !important
+
+  .tema4-rv .tema4-slyder-catalogos .slider-fix-bleed .row
+    padding: 1rem
+
+  .tema4-rv .tema4-slyder-insumos .tarjeta--C02,
+  .tema4-rv .tema4-slyder-formatos .tarjeta--C02
+    padding: 1rem !important
+
+.anexo > p
+  color: #2196f3 !important
