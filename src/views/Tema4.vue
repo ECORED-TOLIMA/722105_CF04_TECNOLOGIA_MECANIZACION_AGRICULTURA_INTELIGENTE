@@ -187,7 +187,7 @@
       #t_4_4.titulo-segundo.color-acento-contenido(data-aos="flip-up")
         h2 4.4. Insumos
       
-      .row.justify-content-center
+      .row.justify-content-center.mb-4
         .col-lg-7.col-12.mb-md-0.order-lg-1.order-2.mb-lg-0
           .row.mb-0
             p Los insumos de mantenimiento son los materiales y sustancias que se consumen o utilizan durante las actividades de inspección, conservación y reparación de la maquinaria agrícola. Su disponibilidad es necesaria para realizar las intervenciones de acuerdo con las especificaciones técnicas de cada equipo y las recomendaciones del fabricante.

@@ -27,12 +27,12 @@
         h2 1.1. Concepto y finalidad del mantenimiento
 
       .row.justify-content-center.mb-5
-        .col-lg-7.col-12.mb-md-0.order-lg-1.order-2.mb-lg-0
+        .col-lg-8.col-12.mb-md-0.order-lg-1.order-2.mb-lg-0
           p El mantenimiento es el conjunto de acciones técnicas, administrativas y de gestión que se realizan durante el ciclo de vida de una máquina o equipo, con el propósito de conservarlo en condiciones adecuadas de funcionamiento o restablecerlas cuando se presenta una falla. Su objetivo es garantizar que la maquinaria pueda cumplir la función para la cual fue diseñada, de acuerdo con las condiciones de operación y las recomendaciones del fabricante.
           .cajon.cajon.C01.color-secundario.px-4.py-3.mb-4
             p.mb-0 En la maquinaria agrícola, el mantenimiento comprende actividades como inspeccionar, limpiar, lubricar, ajustar, calibrar, sustituir componentes y reparar los diferentes sistemas. También requiere organizar los recursos, programar las intervenciones y documentar los trabajos realizados.
           p El mantenimiento de maquinaria agrícola busca:
-        .col-lg-5.col-sm-4.col-5.order-lg-2.order-1.mb-lg-0.mb-4.d-none.d-lg-block
+        .col-lg-4.col-sm-4.col-5.order-lg-2.order-1.mb-lg-0.mb-4.d-none.d-lg-block
           figure
             img(src='@/assets/curso/temas/t1/img-02.png', alt='')
 

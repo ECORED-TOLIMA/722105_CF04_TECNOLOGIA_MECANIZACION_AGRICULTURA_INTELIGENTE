@@ -63,7 +63,7 @@
                 p.mb-0 Determina las frecuencias de mantenimiento teniendo en cuenta las horas de funcionamiento, las hectáreas trabajadas o los periodos de tiempo establecidos.
             .row(numero="4" titulo="Flexible")
               .col-12.mb-0
-                p.mb-0 permite realizar ajustes cuando cambian las condiciones de operación, por ejemplo, cuando la maquinaria trabaja en ambientes con exceso de polvo, barro o humedad.
+                p.mb-0 Permite realizar ajustes cuando cambian las condiciones de operación, por ejemplo, cuando la maquinaria trabaja en ambientes con exceso de polvo, barro o humedad.
             .row(numero="5" titulo="Documentado")
               .col-12.mb-0
                 p.mb-0 Registra las actividades previstas, sus frecuencias, los recursos necesarios y los responsables, facilitando el seguimiento y control del mantenimiento.
