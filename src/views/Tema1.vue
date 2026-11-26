@@ -378,8 +378,8 @@
                   td(data-aos="fade-down") Establecen las especificaciones técnicas, recomendaciones de mantenimiento, advertencias y condiciones de operación de cada máquina.
                   td(data-aos="fade-down") Consultar los intervalos de mantenimiento, lubricantes, repuestos, procedimientos y precauciones de seguridad indicados para cada equipo.
 
-      p.mb-4 En Colombia, la gestión del mantenimiento se relaciona principalmente con los siguientes referentes normativos:
-
+      p.mb-4 El cumplimiento de estas disposiciones se refleja en diferentes aspectos de la gestión del mantenimiento:
+      
       .tarjeta--container.row.mb-4.tema1-cuatro-referentes
         .col-md.tarjeta.color-primario.verde.p-5
           .row.justify-content-center.mb-4
