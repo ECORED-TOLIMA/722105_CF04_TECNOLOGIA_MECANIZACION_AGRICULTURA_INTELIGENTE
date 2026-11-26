@@ -220,45 +220,44 @@
         .col-lg-8.col-12
           .cajon.C04.cajon-metodologias.px-3.py-2.mb-0
             p.mb-0.text-center(data-aos="fade-down") Para realizar una programación adecuada, se deben considerar los siguientes aspectos:
-
-      .cajon.cajon.C06.p-5.mb-4.tema3-slyder-programacion
-        SlyderB(:key="slyderTecnicasKey" :datos="datosSlyder")
+      
+      SlyderB.tema3-slyder.mb-4(:datos="datosSlyder")
 
       p.mb-4 La programación puede apoyarse en diferentes herramientas que facilitan la organización de las actividades y el seguimiento de los tiempos establecidos:
-
+      
       .row.mb-4.tema3-tarjetas-programacion
         .col-md-6.col-xl.mb-4.mb-xl-0
-          .tarjeta-numerada.color-primario.p-5.h-100
+          .tarjeta-numerada.color-primario.p-4.h-100
             .tarjeta-numerada__numero
               .h2 1
-            p.text-center 
+            p.text-center
               b Cronograma de mantenimiento
             p.text-center Presenta las actividades previstas y las fechas o periodos en los que deben realizarse.
 
         .col-md-6.col-xl.mb-4.mb-xl-0
-          .tarjeta-numerada.color-acento-contenido.p-5.h-100
+          .tarjeta-numerada.color-acento-contenido.p-4.h-100
             .tarjeta-numerada__numero
               .h2 2
-            p.text-center 
+            p.text-center
               b Diagrama de Gantt
             p.text-center Permite representar las actividades mediante barras distribuidas en una escala de tiempo, facilitando la identificación de su duración, secuencia y posibles coincidencias.
 
         .col-md-6.col-xl.mb-4.mb-xl-0
-          .tarjeta-numerada.color-acento-contenido.especial.p-5.h-100
+          .tarjeta-numerada.color-acento-contenido.especial.p-4.h-100
             .tarjeta-numerada__numero
               .h2 3
-            p.text-center 
+            p.text-center
               b Programación por horas de funcionamiento
             p.text-center Establece las intervenciones de acuerdo con las lecturas del horómetro de cada máquina.
 
         .col-md-6.col-xl.mb-4.mb-xl-0
-          .tarjeta-numerada.color-acento-botones.especial.p-5.h-100
+          .tarjeta-numerada.color-acento-botones.especial.p-4.h-100
             .tarjeta-numerada__numero
               .h2 4
-            p.text-center 
+            p.text-center
               b Priorización por criticidad
             p.text-center Organiza las intervenciones considerando la importancia de los equipos y las consecuencias que tendría una falla en la operación.
-      
+
       p.mb-4 Por ejemplo, una empresa agropecuaria puede programar la revisión de sus tractores antes de la temporada de siembra y reservar los periodos de menor actividad para realizar intervenciones que requieran mayor tiempo de inactividad.
 
       .row.justify-content-center
@@ -480,7 +479,7 @@
             img(src='@/assets/curso/temas/t3/img-33.png', alt='')
         .col.col-lg-7.col-12.order-lg-2.order-2
           .row.mb-0
-            p Los costos de mantenimiento y reparación de una máquina agrícola no permanecen constantes durante toda su vida útil. Generalmente, aumentan a medida que el equipo acumula horas de funcionamiento y sus componentes presentan desgaste. Durante los primeros años predominan las actividades de mantenimiento preventivo y la sustitución de piezas sometidas al uso. Posteriormente, pueden requerirse reparaciones de mayor alcance, como el cambio del embrague, la reparación de la bomba hidráulica o el reacondicionamiento del motor.
+            p.mb-4 Los costos de mantenimiento y reparación de una máquina agrícola no permanecen constantes durante toda su vida útil. Generalmente, aumentan a medida que el equipo acumula horas de funcionamiento y sus componentes presentan desgaste. Durante los primeros años predominan las actividades de mantenimiento preventivo y la sustitución de piezas sometidas al uso. Posteriormente, pueden requerirse reparaciones de mayor alcance, como el cambio del embrague, la reparación de la bomba hidráulica o el reacondicionamiento del motor.
             .cajon.cajon.C02.color-primario.px-4.py-4
               p.mb-0 Esta evolución implica que los recursos destinados al mantenimiento deben ajustarse a la antigüedad y las condiciones de funcionamiento de cada equipo. Las estimaciones técnicas relacionan el costo acumulado de las reparaciones con el precio de adquisición de la máquina y las horas de utilización, mostrando una tendencia de incremento a medida que aumenta su tiempo de servicio (American Society of Agricultural and Biological Engineers [ASABE], 2011).
 

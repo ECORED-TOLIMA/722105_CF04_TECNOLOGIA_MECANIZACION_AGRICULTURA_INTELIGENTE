@@ -231,7 +231,7 @@ export default {
       {
         icono: 'fas fa-file-pdf',
         titulo: 'Descargar PDF',
-        download: 'downloads/dist.pdf',
+        download: 'downloads/722105_CF04_CFA.pdf',
       },
       {
         icono: 'fas fa-download',
@@ -365,7 +365,7 @@ export default {
         {
           nombre: 'Jorge Enrique Rodríguez Vargas',
           cargo: 'Instructor técnico ',
-          centro: 'Centro de Comercio y Servicios - Regional Tolima',
+          centro: 'Centro Agropecuario La Granja - Regional Tolima',
         },
         {
           nombre: 'Viviana Esperanza Herrera Quiñonez',
@@ -389,7 +389,7 @@ export default {
         },
         {
           nombre: 'Gilberto Junior Rodríguez Rodríguez',
-          cargo: 'Animador y productor audiovisual',
+          cargo: 'Animador y productor multimedia',
           centro: 'Centro de Comercio y Servicios - Regional Tolima',
         },
       ],

@@ -28,7 +28,7 @@
         h2 2.1. Tipos de diagnóstico de mantenimiento
 
       .bloque-texto-g.color-primario.tema2-bloque-intro.p-3.p-sm-4.p-md-5.mb-4(data-aos="flip-down")
-        .bloque-texto-g__img.img-bg-01
+        .bloque-texto-g__img.img-bg-02
         .bloque-texto-g__texto.p-4
           p.mb-0(data-aos="fade-down") El diagnóstico de mantenimiento puede realizarse mediante diferentes métodos, según las características de la maquinaria, el sistema que se desea evaluar y las señales identificadas. Para ello, se utilizan técnicas de observación, instrumentos de medición, herramientas electrónicas y análisis de fluidos que permiten obtener información sobre las condiciones de funcionamiento de los equipos.
 
@@ -37,10 +37,9 @@
           .cajon.C04.cajon-metodologias.px-3.py-2.mb-0
             p.mb-0.text-center(data-aos="fade-down") Los principales tipos de diagnóstico aplicables a la maquinaria agrícola son los siguientes:
 
-      .cajon.cajon.C06.tema2-slyder-diagnostico.p-5.mb-4
-        SlyderB(:key="slyderTecnicasKey" :datos="datosSlyder2")
+      SlyderB.tema2-slyder.mb-4(:datos="datosSlyder2")
 
-      p La selección del método de diagnóstico depende de la anomalía que se desea investigar, las características de la máquina y los recursos técnicos disponibles. En algunos casos, es necesario combinar varios métodos para obtener información más completa sobre el estado del equipo.
+      p.mb-0 La selección del método de diagnóstico depende de la anomalía que se desea investigar, las características de la máquina y los recursos técnicos disponibles. En algunos casos, es necesario combinar varios métodos para obtener información más completa sobre el estado del equipo.
 
       Separador
       
@@ -48,11 +47,11 @@
         h2 2.2. Clasificación y características de las fallas
 
       .row.justify-content-center.mb-5
-        .col-lg-7.col-12.mb-md-0.order-lg-1.order-2.mb-lg-0
+        .col-lg-8.col-12.mb-md-0.order-lg-1.order-2.mb-lg-0
           .cajon.cajon.C01.color-secundario.px-4.py-3.mb-4
             p.mb-0 Una falla es una condición en la que una máquina o alguno de sus componentes pierde la capacidad de cumplir adecuadamente la función para la cual fue diseñado. En la maquinaria agrícola, puede afectar el funcionamiento de uno o varios sistemas, disminuir el rendimiento del equipo o impedir que continúe operando.
           p Las fallas pueden clasificarse de acuerdo con su origen, comportamiento y consecuencias. Reconocer sus características permite comprender cómo se presentan, identificar su posible impacto y establecer prioridades para el diagnóstico y la gestión del mantenimiento. A continuación, se presenta su clasificación:
-        .col-lg-5.col-sm-4.col-5.order-lg-2.order-1.mb-lg-0.mb-4.d-none.d-lg-block
+        .col-lg-4.col-sm-4.col-5.order-lg-2.order-1.mb-lg-0.mb-4.d-none.d-lg-block
           figure
             img(src='@/assets/curso/temas/t2/img-08.png', alt='')
 

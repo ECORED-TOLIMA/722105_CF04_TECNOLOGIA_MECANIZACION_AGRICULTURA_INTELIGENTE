@@ -190,7 +190,7 @@
       .row.justify-content-center.mb-4
         .col-lg-7.col-12.mb-md-0.order-lg-1.order-2.mb-lg-0
           .row.mb-0
-            p Los insumos de mantenimiento son los materiales y sustancias que se consumen o utilizan durante las actividades de inspección, conservación y reparación de la maquinaria agrícola. Su disponibilidad es necesaria para realizar las intervenciones de acuerdo con las especificaciones técnicas de cada equipo y las recomendaciones del fabricante.
+            p.mb-4 Los insumos de mantenimiento son los materiales y sustancias que se consumen o utilizan durante las actividades de inspección, conservación y reparación de la maquinaria agrícola. Su disponibilidad es necesaria para realizar las intervenciones de acuerdo con las especificaciones técnicas de cada equipo y las recomendaciones del fabricante.
             .cajon.cajon.C02.color-primario.px-4.py-3.mb-4
               p.mb-0(data-aos="fade-down") Entre los principales insumos se encuentran los aceites, las grasas, los refrigerantes, los líquidos para sistemas específicos, los productos de limpieza y los materiales absorbentes. Cada uno cumple una función determinada y debe seleccionarse teniendo en cuenta sus características, compatibilidad y condiciones de utilización.
         .col-lg-5.col-sm-4.col-5.order-lg-2.order-1.mb-lg-0.mb-4.d-none.d-lg-block
@@ -390,7 +390,7 @@
             img(src='@/assets/curso/temas/t4/img-19.svg', alt='')
 
         .col-lg-9.col-12
-          .recurso-valores-texto
+          .recurso-valores-texto2
             p.mb-0(data-aos="fade-down") La selección de un repuesto requiere comprobar que corresponda a las características y especificaciones de la máquina. Para ello, es importante considerar los siguientes aspectos:
 
       .row.justify-content-center.mb-3
@@ -448,14 +448,14 @@
 
       p.mb-4 Los manuales técnicos son documentos elaborados por el fabricante que contienen información sobre las características, el funcionamiento, la operación y el mantenimiento de una máquina. Su consulta permite conocer las especificaciones de los componentes, las recomendaciones de mantenimiento y los procedimientos que deben seguirse para conservar los equipos en condiciones adecuadas.
 
-      .row.justify-content-center.align-items-stretch.mb-5.g-3
-        .col-lg-1.d-none.d-lg-flex.align-items-center.justify-content-center
-          figure.recurso-valores-icono
-            img(src='@/assets/curso/temas/t4/img-22.svg', alt='')
+      .row.justify-content-center.align-items-stretch.mb-4.g-3
+        .col-lg-10.col-12
+          .cajon.cajon.C01.color-secundario.px-4.py-3.recurso-documentos-t4
+            .recurso-documentos-t4__interior
+              p.mb-0(data-aos="fade-down") En la maquinaria agrícola, estos documentos constituyen una fuente de información para los operarios y el personal encargado del mantenimiento, ya que orientan la utilización de los equipos y ayudan a evitar intervenciones que puedan afectar su funcionamiento o seguridad.
 
-        .col-lg-9.col-12
-          .cajon.cajon.C01.color-secundario.px-4.py-3
-            p.mb-0(data-aos="fade-down") En la maquinaria agrícola, estos documentos constituyen una fuente de información para los operarios y el personal encargado del mantenimiento, ya que orientan la utilización de los equipos y ayudan a evitar intervenciones que puedan afectar su funcionamiento o seguridad.
+              figure.recurso-documentos-t4__icono.d-none.d-lg-flex
+                img(src='@/assets/curso/temas/t4/img-22.svg', alt='')
 
       .row.justify-content-center.align-items-center.mb-4
         .col-lg-8.col-12
@@ -499,8 +499,7 @@
                 
       p.mb-4 La consulta de los manuales técnicos permite tomar decisiones fundamentadas sobre las necesidades de mantenimiento y los recursos que deben utilizarse. Entre sus principales aportes se encuentran:
 
-      .cajon.cajon.C06.tema4-slyder-manuales.p-5.mb-4
-        SlyderB(:key="slyderErroresKey" :datos="datosSlyder")
+      SlyderB.tema4-slyder.mb-4(:datos="datosSlyder")
 
       p.mb-4 Para facilitar su consulta, es recomendable mantener los manuales organizados y disponibles para el personal responsable. Se puede conservar una copia física del manual del operador en cada máquina y disponer de copias digitales de los demás documentos en el taller o en el sistema de información de la empresa.
 
